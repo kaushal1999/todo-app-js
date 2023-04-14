@@ -18,6 +18,9 @@ h1{
 }
 
 ul {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	text-align: left;
 	padding-left: 10%;
 	padding: 7%;
@@ -26,13 +29,28 @@ ul {
 }
 
 li:hover{
-	color:red;
-	/* margin: 4%; */
-	/* transition: 1.5s ease; */
 	cursor: pointer;
 }
 
-li.deleted {
-	text-decoration-line: line-through;
+
+.deleted {
+	text-decoration-line: line-through;   
+}
+
+li {
+	padding: 10px;
+	width: 50%;
+	background-color: gainsboro;
+    display: flex;
+    justify-content: space-between;
+	margin-bottom: 5px;
+	border-radius: 10px;
+	align-items: center;
+}
+
+button {
+	padding: 5px;
+	background-color: gainsboro;
+	border: none;
 }
 
